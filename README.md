@@ -14,3 +14,15 @@
 ```rmdir``` — удалить папку (без файлов)  
  
 ```rm -r``` — удалить папку рекурсивно (с файлами)  
+
+---
+
+## Схемы статусов файлов  
+
+```mermaid
+graph LR;
+	untracked -- "git add + [file]" --> staged;
+	staged -- "git commit -m [commit message]" --> tracked/commited;
+	%% стрелка без текста для примера:
+	A --> B;
+```
